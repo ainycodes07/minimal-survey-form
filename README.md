@@ -16,7 +16,7 @@ The form features a clean, responsive layout with accessible form elements and a
 
 ## 🚀 Demo
 You can view the live demo here:  
-[Live Preview](#) <!-- replace # with GitHub Pages link once deployed -->
+[Live Preview](https://ainycodes07.github.io/minimal-survey-form/)
 
 ---
 
