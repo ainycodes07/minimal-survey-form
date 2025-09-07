@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Workplace Happiness & Burnout Survey</h1>
+        <p id="description" class="description text-center">
+          Thank you for sharing your experience to help us understand workplace well-being
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >On a scale of 1 to 10, how happy are you at work?<span class="clue">(1 = very unhappy, 10 = very happy)</span></label
+          >
+          <input
+            type="number"
+            name="happiness"
+            id="number"
+            min="1"
+            max="10"
+            class="form-control"
+            placeholder="Rate 1–10"
+          />
+        </div>
+        <div class="form-group">
+          <p>How often do you feel stressed at work?</p>
+          <select id="dropdown" name="stress-frequency" class="form-control" required>
+            <option disabled selected value>Select frequency</option>
+            <option value="daily">Daily</option>
+            <option value="few-times-week">A few times a week</option>
+            <option value="few-times-month">A few times a month</option>
+            <option value="rarely">Rarely</option>
+            <option value="never">Never</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Do you feel supported by your manager when you’re overwhelmed?</p>
+          <label>
+            <input
+              name="manager-support"
+              value="always"
+              type="radio"
+              class="input-radio"
+              checked
+            />Always</label
+          >
+          <label>
+            <input
+              name="manager-support"
+              value="sometimes"
+              type="radio"
+              class="input-radio"
+            />Sometimes</label
+          >
+          <label>
+            <input
+              name="manager-support"
+              value="rarely"
+              type="radio"
+              class="input-radio"
+            />Rarely</label
+          >
+          <label>
+            <input
+              name="manager-support"
+              value="never"
+              type="radio"
+              class="input-radio"
+            />Never</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Which factor affects your motivation the most?</p>
+          <select id="most-like" name="motivation-factor" class="form-control" required>
+            <option disabled selected value>Select a factor</option>
+            <option value="workload">Workload</option>
+            <option value="management-support">Management support</option>
+            <option value="team-collaboration">Team collaboration</option>
+            <option value="recognition">Recognition/reward</option>
+            <option value="work-life-balance">Work-life balance</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What strategies do you use to cope with stress at work?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="coping"
+              value="short-breaks"
+              type="checkbox"
+              class="input-checkbox"
+            />Taking short breaks</label
+          >
+          <label>
+            <input
+              name="coping"
+              value="talking"
+              type="checkbox"
+              class="input-checkbox"
+            />Talking to colleagues/friends</label
+          >
+          <label
+            ><input
+              name="coping"
+              value="exercise"
+              type="checkbox"
+              class="input-checkbox"
+            />Exercise/physical activity</label
+          >
+          <label
+            ><input
+              name="coping"
+              value="mindfulness"
+              type="checkbox"
+              class="input-checkbox"
+            />Mindfulness/meditation</label
+          >
+          <label
+            ><input
+              name="coping"
+              value="delegating"
+              type="checkbox"
+              class="input-checkbox"
+            />Delegating tasks</label
+          >
+          <label
+            ><input
+              name="coping"
+              value="other"
+              type="checkbox"
+              class="input-checkbox"
+            />Other (please specify)</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Any additional comments or suggestions about workplace well-being?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
