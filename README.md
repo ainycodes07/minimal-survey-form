@@ -23,4 +23,4 @@ You can view the live demo here:
 ## 🛠️ Usage
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/minimal-survey-form.git
+   git clone https://github.com/ainycodes07/minimal-survey-form.git
